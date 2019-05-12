@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Customer</title>
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="about.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Admin Prao</div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="Dashboard.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Customer Components
+      </div>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+          aria-controls="collapseTwo">
+          <i class="fas fa-fw fa-cog"></i>
+          <span>Custom List</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <!-- <h6 class="collapse-header">Custom</h6> -->
+            <!-- <i class="fas fa-fw fa-table"></i> -->
+            <a class="collapse-item" href="customer.html">Customer</a>
+            <a class="collapse-item" href="customerdetail.html">Customer Details</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav about -->
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>About</span></a>
+      </li>
+
+      <!-- Nav Item - Tables -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Sing out</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+
+      <!-- Sidebar Toggler (Sidebar) -->
+
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                      aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <!-- Nav Item - Alerts -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+              </a>
+              <!-- Dropdown - Alerts -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                  Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-primary">
+                      <i class="fas fa-file-alt text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 12, 2019</div>
+                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-success">
+                      <i class="fas fa-donate text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 7, 2019</div>
+                    $290.29 has been deposited into your account!
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                    <div class="icon-circle bg-warning">
+                      <i class="fas fa-exclamation-triangle text-white"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="small text-gray-500">December 2, 2019</div>
+                    Spending Alert: We've noticed unusually high spending for your account.
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+              </div>
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">4+</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
+                      having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                    <div class="status-indicator"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">I have the photos that you ordered last month, how would you like them
+                      sent to you?</div>
+                    <div class="small text-gray-500">Jae Chun · 1d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                    <div class="status-indicator bg-warning"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Last month's report looks great, I am very happy with the progress so
+                      far, keep up the good work!</div>
+                    <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                  </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div>
+                    <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people
+                      say this to all dogs, even if they aren't good...</div>
+                    <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                  </div>
+                </a>
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Phennapa Thongsaiporn</span>
+                <img class="img-profile rounded-circle"
+                  src="prao2.JPG">
+              </a>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+
+        <!-- Dropdown - User Information -->
+        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="about.html">
+            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+            Profile
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+            Logout
+          </a>
+        </div>
+        </li>
+
+        </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="h3 mb-2 text-gray-800">Customer</h1>
+          <!-- DataTales Example -->
+          <div class="card shadow mb-4">
+            <div class="card-header py-3">
+              <h6 class="m-0 font-weight-bold text-primary">Customer List</h6>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="data" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Contect Name</th>
+                      <th>Contect Title</th>
+                    </tr>
+                  </thead>
+                <tr><th scope="row">1</th><td>AROUT</td><td><a href="customerdetail.html" onclick="setCookies(0)">Around the Horn</a></td><td>Thomas Hardy</td><td>Sales Representative</td></tr><tr><th scope="row">2</th><td>BERGS</td><td><a href="customerdetail.html" onclick="setCookies(1)">Berglunds snabbköp</a></td><td>Christina Berglund</td><td>Order Administrator</td></tr><tr><th scope="row">3</th><td>BLAUS</td><td><a href="customerdetail.html" onclick="setCookies(2)">Blauer See Delikatessen</a></td><td>Hanna Moos</td><td>Sales Representative</td></tr><tr><th scope="row">4</th><td>BLONP</td><td><a href="customerdetail.html" onclick="setCookies(3)">Blondesddsl père et fils</a></td><td>Frédérique Citeaux</td><td>Marketing Manager</td></tr><tr><th scope="row">5</th><td>BOLID</td><td><a href="customerdetail.html" onclick="setCookies(4)">Bólido Comidas preparadas</a></td><td>Martín Sommer</td><td>Owner</td></tr><tr><th scope="row">6</th><td>BONAP</td><td><a href="customerdetail.html" onclick="setCookies(5)">Bon app'</a></td><td>Laurence Lebihan</td><td>Owner</td></tr><tr><th scope="row">7</th><td>ANTON</td><td><a href="customerdetail.html" onclick="setCookies(6)">Antonio Moreno Taquería</a></td><td>Antonio Moreno</td><td>Owner</td></tr><tr><th scope="row">8</th><td>ANATR</td><td><a href="customerdetail.html" onclick="setCookies(7)">Ana Trujillo Emparedados y helados</a></td><td>Ana Trujillo</td><td>Owner</td></tr><tr><th scope="row">9</th><td>CACTU</td><td><a href="customerdetail.html" onclick="setCookies(8)">Cactus Comidas para llevar</a></td><td>Patricio Simpson</td><td>Sales Agent</td></tr><tr><th scope="row">10</th><td>BSBEV</td><td><a href="customerdetail.html" onclick="setCookies(9)">B's Beverages</a></td><td>Victoria Ashworth</td><td>Sales Representative</td></tr><tr><th scope="row">11</th><td>CENTC</td><td><a href="customerdetail.html" onclick="setCookies(10)">Centro comercial Moctezuma</a></td><td>Francisco Chang</td><td>Marketing Manager</td></tr><tr><th scope="row">12</th><td>CHOPS</td><td><a href="customerdetail.html" onclick="setCookies(11)">Chop-suey Chinese</a></td><td>Yang Wang</td><td>Owner</td></tr><tr><th scope="row">13</th><td>COMMI</td><td><a href="customerdetail.html" onclick="setCookies(12)">Comércio Mineiro</a></td><td>Pedro Afonso</td><td>Sales Associate</td></tr><tr><th scope="row">14</th><td>CONSH</td><td><a href="customerdetail.html" onclick="setCookies(13)">Consolidated Holdings</a></td><td>Elizabeth Brown</td><td>Sales Representative</td></tr><tr><th scope="row">15</th><td>ALFKI</td><td><a href="customerdetail.html" onclick="setCookies(14)">Alfreds Futterkiste</a></td><td>Maria Anders</td><td>Sales Representative</td></tr><tr><th scope="row">16</th><td>BOTTM</td><td><a href="customerdetail.html" onclick="setCookies(15)">Bottom-Dollar Markets</a></td><td>Elizabeth Lincoln</td><td>Accounting Manager</td></tr><tr><th scope="row">17</th><td>DRACD</td><td><a href="customerdetail.html" onclick="setCookies(16)">Drachenblut Delikatessen</a></td><td>Sven Ottlieb</td><td>Order Administrator</td></tr><tr><th scope="row">18</th><td>DUMON</td><td><a href="customerdetail.html" onclick="setCookies(17)">Du monde entier</a></td><td>Janine Labrune</td><td>Owner</td></tr><tr><th scope="row">19</th><td>FAMIA</td><td><a href="customerdetail.html" onclick="setCookies(18)">Familia Arquibaldo</a></td><td>Aria Cruz</td><td>Marketing Assistant</td></tr><tr><th scope="row">20</th><td>FISSA</td><td><a href="customerdetail.html" onclick="setCookies(19)">FISSA Fabrica Inter. Salchichas S.A.</a></td><td>Diego Roel</td><td>Accounting Manager</td></tr><tr><th scope="row">21</th><td>FOLIG</td><td><a href="customerdetail.html" onclick="setCookies(20)">Folies gourmandes</a></td><td>Martine Rancé</td><td>Assistant Sales Agent</td></tr><tr><th scope="row">22</th><td>FOLKO</td><td><a href="customerdetail.html" onclick="setCookies(21)">Folk och fä HB</a></td><td>Maria Larsson</td><td>Owner</td></tr><tr><th scope="row">23</th><td>FRANK</td><td><a href="customerdetail.html" onclick="setCookies(22)">Frankenversand</a></td><td>Peter Franken</td><td>Marketing Manager</td></tr><tr><th scope="row">24</th><td>FRANR</td><td><a href="customerdetail.html" onclick="setCookies(23)">France restauration</a></td><td>Carine Schmitt</td><td>Marketing Manager</td></tr><tr><th scope="row">25</th><td>EASTC</td><td><a href="customerdetail.html" onclick="setCookies(24)">Eastern Connection</a></td><td>Ann Devon</td><td>Sales Agent</td></tr><tr><th scope="row">26</th><td>ERNSH</td><td><a href="customerdetail.html" onclick="setCookies(25)">Ernst Handel</a></td><td>Roland Mendel</td><td>Sales Manager</td></tr><tr><th scope="row">27</th><td>FRANS</td><td><a href="customerdetail.html" onclick="setCookies(26)">Franchi S.p.A.</a></td><td>Paolo Accorti</td><td>Sales Representative</td></tr><tr><th scope="row">28</th><td>FURIB</td><td><a href="customerdetail.html" onclick="setCookies(27)">Furia Bacalhau e Frutos do Mar</a></td><td>Lino Rodriguez</td><td>Sales Manager</td></tr><tr><th scope="row">29</th><td>GALED</td><td><a href="customerdetail.html" onclick="setCookies(28)">Galería del gastrónomo</a></td><td>Eduardo Saavedra</td><td>Marketing Manager</td></tr><tr><th scope="row">30</th><td>GODOS</td><td><a href="customerdetail.html" onclick="setCookies(29)">Godos Cocina Típica</a></td><td>José Pedro Freyre</td><td>Sales Manager</td></tr><tr><th scope="row">31</th><td>GOURL</td><td><a href="customerdetail.html" onclick="setCookies(30)">Gourmet Lanchonetes</a></td><td>André Fonseca</td><td>Sales Associate</td></tr><tr><th scope="row">32</th><td>HILAA</td><td><a href="customerdetail.html" onclick="setCookies(31)">HILARION-Abastos</a></td><td>Carlos Hernández</td><td>Sales Representative</td></tr><tr><th scope="row">33</th><td>HUNGC</td><td><a href="customerdetail.html" onclick="setCookies(32)">Hungry Coyote Import Store</a></td><td>Yoshi Latimer</td><td>Sales Representative</td></tr><tr><th scope="row">34</th><td>HUNGO</td><td><a href="customerdetail.html" onclick="setCookies(33)">Hungry Owl All-Night Grocers</a></td><td>Patricia McKenna</td><td>Sales Associate</td></tr><tr><th scope="row">35</th><td>ISLAT</td><td><a href="customerdetail.html" onclick="setCookies(34)">Island Trading</a></td><td>Helen Bennett</td><td>Marketing Manager</td></tr><tr><th scope="row">36</th><td>KOENE</td><td><a href="customerdetail.html" onclick="setCookies(35)">Königlich Essen</a></td><td>Philip Cramer</td><td>Sales Associate</td></tr><tr><th scope="row">37</th><td>LACOR</td><td><a href="customerdetail.html" onclick="setCookies(36)">La corne d'abondance</a></td><td>Daniel Tonini</td><td>Sales Representative</td></tr><tr><th scope="row">38</th><td>GROSR</td><td><a href="customerdetail.html" onclick="setCookies(37)">GROSELLA-Restaurante</a></td><td>Manuel Pereira</td><td>Owner</td></tr><tr><th scope="row">39</th><td>HANAR</td><td><a href="customerdetail.html" onclick="setCookies(38)">Hanari Carnes</a></td><td>Mario Pontes</td><td>Accounting Manager</td></tr><tr><th scope="row">40</th><td>LAUGB</td><td><a href="customerdetail.html" onclick="setCookies(39)">Laughing Bacchus Wine Cellars</a></td><td>Yoshi Tannamuri</td><td>Marketing Assistant</td></tr><tr><th scope="row">41</th><td>LAZYK</td><td><a href="customerdetail.html" onclick="setCookies(40)">Lazy K Kountry Store</a></td><td>John Steel</td><td>Marketing Manager</td></tr><tr><th scope="row">42</th><td>LEHMS</td><td><a href="customerdetail.html" onclick="setCookies(41)">Lehmanns Marktstand</a></td><td>Renate Messner</td><td>Sales Representative</td></tr><tr><th scope="row">43</th><td>GREAL</td><td><a href="customerdetail.html" onclick="setCookies(42)">Great Lakes Food Market</a></td><td>Howard Snyder</td><td>Marketing Manager</td></tr><tr><th scope="row">44</th><td>LAMAI</td><td><a href="customerdetail.html" onclick="setCookies(43)">La maison d'Asie</a></td><td>Annette Roulet</td><td>Sales Manager</td></tr><tr><th scope="row">45</th><td>LETSS</td><td><a href="customerdetail.html" onclick="setCookies(44)">Let's Stop N Shop</a></td><td>Jaime Yorres</td><td>Owner</td></tr><tr><th scope="row">46</th><td>MAGAA</td><td><a href="customerdetail.html" onclick="setCookies(45)">Magazzini Alimentari Riuniti</a></td><td>Giovanni Rovelli</td><td>Marketing Manager</td></tr><tr><th scope="row">47</th><td>MAISD</td><td><a href="customerdetail.html" onclick="setCookies(46)">Maison Dewey</a></td><td>Catherine Dewey</td><td>Sales Agent</td></tr><tr><th scope="row">48</th><td>MEREP</td><td><a href="customerdetail.html" onclick="setCookies(47)">Mère Paillarde</a></td><td>Jean Fresnière</td><td>Marketing Assistant</td></tr><tr><th scope="row">49</th><td>MORGK</td><td><a href="customerdetail.html" onclick="setCookies(48)">Morgenstern Gesundkost</a></td><td>Alexander Feuer</td><td>Marketing Assistant</td></tr><tr><th scope="row">50</th><td>NORTS</td><td><a href="customerdetail.html" onclick="setCookies(49)">North/South</a></td><td>Simon Crowther</td><td>Sales Associate</td></tr><tr><th scope="row">51</th><td>OCEAN</td><td><a href="customerdetail.html" onclick="setCookies(50)">Océano Atlántico Ltda.</a></td><td>Yvonne Moncada</td><td>Sales Agent</td></tr><tr><th scope="row">52</th><td>LINOD</td><td><a href="customerdetail.html" onclick="setCookies(51)">LINO-Delicateses</a></td><td>Felipe Izquierdo</td><td>Owner</td></tr><tr><th scope="row">53</th><td>LILAS</td><td><a href="customerdetail.html" onclick="setCookies(52)">LILA-Supermercado</a></td><td>Carlos González</td><td>Accounting Manager</td></tr><tr><th scope="row">54</th><td>OLDWO</td><td><a href="customerdetail.html" onclick="setCookies(53)">Old World Delicatessen</a></td><td>Rene Phillips</td><td>Sales Representative</td></tr><tr><th scope="row">55</th><td>OTTIK</td><td><a href="customerdetail.html" onclick="setCookies(54)">Ottilies Käseladen</a></td><td>Henriette Pfalzheim</td><td>Owner</td></tr><tr><th scope="row">56</th><td>PICCO</td><td><a href="customerdetail.html" onclick="setCookies(55)">Piccolo und mehr</a></td><td>Georg Pipps</td><td>Sales Manager</td></tr><tr><th scope="row">57</th><td>PARIS</td><td><a href="customerdetail.html" onclick="setCookies(56)">Paris spécialités</a></td><td>Marie Bertrand</td><td>Owner</td></tr><tr><th scope="row">58</th><td>PERIC</td><td><a href="customerdetail.html" onclick="setCookies(57)">Pericles Comidas clásicas</a></td><td>Guillermo Fernández</td><td>Sales Representative</td></tr><tr><th scope="row">59</th><td>PRINI</td><td><a href="customerdetail.html" onclick="setCookies(58)">Princesa Isabel Vinhos</a></td><td>Isabel de Castro</td><td>Sales Representative</td></tr><tr><th scope="row">60</th><td>LONEP</td><td><a href="customerdetail.html" onclick="setCookies(59)">Lonesome Pine Restaurant</a></td><td>Fran Wilson</td><td>Sales Manager</td></tr><tr><th scope="row">61</th><td>QUEEN</td><td><a href="customerdetail.html" onclick="setCookies(60)">Queen Cozinha</a></td><td>Lúcia Carvalho</td><td>Marketing Assistant</td></tr><tr><th scope="row">62</th><td>RATTC</td><td><a href="customerdetail.html" onclick="setCookies(61)">Rattlesnake Canyon Grocery</a></td><td>Paula Wilson</td><td>Assistant Sales Representative</td></tr><tr><th scope="row">63</th><td>REGGC</td><td><a href="customerdetail.html" onclick="setCookies(62)">Reggiani Caseifici</a></td><td>Maurizio Moroni</td><td>Sales Associate</td></tr><tr><th scope="row">64</th><td>QUEDE</td><td><a href="customerdetail.html" onclick="setCookies(63)">Que Delícia</a></td><td>Bernardo Batista</td><td>Accounting Manager</td></tr><tr><th scope="row">65</th><td>RANCH</td><td><a href="customerdetail.html" onclick="setCookies(64)">Rancho grande</a></td><td>Sergio Gutiérrez</td><td>Sales Representative</td></tr><tr><th scope="row">66</th><td>ROMEY</td><td><a href="customerdetail.html" onclick="setCookies(65)">Romero y tomillo</a></td><td>Alejandra Camino</td><td>Accounting Manager</td></tr><tr><th scope="row">67</th><td>QUICK</td><td><a href="customerdetail.html" onclick="setCookies(66)">QUICK-Stop</a></td><td>Horst Kloss</td><td>Accounting Manager</td></tr><tr><th scope="row">68</th><td>RICAR</td><td><a href="customerdetail.html" onclick="setCookies(67)">Ricardo Adocicados</a></td><td>Janete Limeira</td><td>Assistant Sales Agent</td></tr><tr><th scope="row">69</th><td>RICSU</td><td><a href="customerdetail.html" onclick="setCookies(68)">Richter Supermarkt</a></td><td>Michael Holz</td><td>Sales Manager</td></tr><tr><th scope="row">70</th><td>SANTG</td><td><a href="customerdetail.html" onclick="setCookies(69)">Santé Gourmet</a></td><td>Jonas Bergulfsen</td><td>Owner</td></tr><tr><th scope="row">71</th><td>SAVEA</td><td><a href="customerdetail.html" onclick="setCookies(70)">Save-a-lot Markets</a></td><td>Jose Pavarotti</td><td>Sales Representative</td></tr><tr><th scope="row">72</th><td>SEVES</td><td><a href="customerdetail.html" onclick="setCookies(71)">Seven Seas Imports</a></td><td>Hari Kumar</td><td>Sales Manager</td></tr><tr><th scope="row">73</th><td>SIMOB</td><td><a href="customerdetail.html" onclick="setCookies(72)">Simons bistro</a></td><td>Jytte Petersen</td><td>Owner</td></tr><tr><th scope="row">74</th><td>SPECD</td><td><a href="customerdetail.html" onclick="setCookies(73)">Spécialités du monde</a></td><td>Dominique Perrier</td><td>Marketing Manager</td></tr><tr><th scope="row">75</th><td>SPLIR</td><td><a href="customerdetail.html" onclick="setCookies(74)">Split Rail Beer &amp; Ale</a></td><td>Art Braunschweiger</td><td>Sales Manager</td></tr><tr><th scope="row">76</th><td>SUPRD</td><td><a href="customerdetail.html" onclick="setCookies(75)">Suprêmes délices</a></td><td>Pascale Cartrain</td><td>Accounting Manager</td></tr><tr><th scope="row">77</th><td>THEBI</td><td><a href="customerdetail.html" onclick="setCookies(76)">The Big Cheese</a></td><td>Liz Nixon</td><td>Marketing Manager</td></tr><tr><th scope="row">78</th><td>THECR</td><td><a href="customerdetail.html" onclick="setCookies(77)">The Cracker Box</a></td><td>Liu Wong</td><td>Marketing Assistant</td></tr><tr><th scope="row">79</th><td>TOMSP</td><td><a href="customerdetail.html" onclick="setCookies(78)">Toms Spezialitäten</a></td><td>Karin Josephs</td><td>Marketing Manager</td></tr><tr><th scope="row">80</th><td>TORTU</td><td><a href="customerdetail.html" onclick="setCookies(79)">Tortuga Restaurante</a></td><td>Miguel Angel Paolino</td><td>Owner</td></tr><tr><th scope="row">81</th><td>TRADH</td><td><a href="customerdetail.html" onclick="setCookies(80)">Tradição Hipermercados</a></td><td>Anabela Domingues</td><td>Sales Representative</td></tr><tr><th scope="row">82</th><td>TRAIH</td><td><a href="customerdetail.html" onclick="setCookies(81)">Trail's Head Gourmet Provisioners</a></td><td>Helvetius Nagy</td><td>Sales Associate</td></tr><tr><th scope="row">83</th><td>VAFFE</td><td><a href="customerdetail.html" onclick="setCookies(82)">Vaffeljernet</a></td><td>Palle Ibsen</td><td>Sales Manager</td></tr><tr><th scope="row">84</th><td>VICTE</td><td><a href="customerdetail.html" onclick="setCookies(83)">Victuailles en stock</a></td><td>Mary Saveley</td><td>Sales Agent</td></tr><tr><th scope="row">85</th><td>VINET</td><td><a href="customerdetail.html" onclick="setCookies(84)">Vins et alcools Chevalier</a></td><td>Paul Henriot</td><td>Accounting Manager</td></tr><tr><th scope="row">86</th><td>WANDK</td><td><a href="customerdetail.html" onclick="setCookies(85)">Die Wandernde Kuh</a></td><td>Rita Müller</td><td>Sales Representative</td></tr><tr><th scope="row">87</th><td>WARTH</td><td><a href="customerdetail.html" onclick="setCookies(86)">Wartian Herkku</a></td><td>Pirkko Koskitalo</td><td>Accounting Manager</td></tr><tr><th scope="row">88</th><td>WELLI</td><td><a href="customerdetail.html" onclick="setCookies(87)">Wellington Importadora</a></td><td>Paula Parente</td><td>Sales Manager</td></tr><tr><th scope="row">89</th><td>WHITC</td><td><a href="customerdetail.html" onclick="setCookies(88)">White Clover Markets</a></td><td>Karl Jablonski</td><td>Owner</td></tr><tr><th scope="row">90</th><td>WILMK</td><td><a href="customerdetail.html" onclick="setCookies(89)">Wilman Kala</a></td><td>Matti Karttunen</td><td>Owner/Marketing Assistant</td></tr><tr><th scope="row">91</th><td>WOLZA</td><td><a href="customerdetail.html" onclick="setCookies(90)">Wolski  Zajazd</a></td><td>Zbyszek Piestrzeniewicz</td><td>Owner</td></tr></table>
+              </div>
+            </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="index.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <script src="customer.js"></script>
+
+
+</body>
+
+</html>
